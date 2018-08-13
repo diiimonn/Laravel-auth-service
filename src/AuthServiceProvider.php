@@ -1,14 +1,14 @@
 <?php
 
-namespace diiimonn\LaravelVerificationService;
+namespace diiimonn\LaravelAuthService;
 
 use Illuminate\Support\ServiceProvider;
 
 /**
- * Class VerificationServiceProvider
- * @package diiimonn\LaravelVerificationService
+ * Class AuthServiceProvider
+ * @package diiimonn\LaravelAuthService
  */
-class VerificationServiceProvider extends ServiceProvider
+class AuthServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap services.
