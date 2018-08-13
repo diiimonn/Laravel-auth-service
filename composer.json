@@ -2,9 +2,6 @@
     "name": "diiimonn/Laravel-auth-service",
     "description": "Microservice for auth user",
     "type": "laravel-extension",
-    "require-dev": {
-        "phpunit/phpunit": "^7.3"
-    },
     "license": "MIT",
     "authors": [
         {
