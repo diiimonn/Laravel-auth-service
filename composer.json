@@ -1,0 +1,24 @@
+{
+    "name": "diiimonn/Laravel-auth-service",
+    "description": "Microservice for auth user",
+    "type": "laravel-extension",
+    "require": {
+        "laravel/laravel": "^5.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dmitry Havrilenko",
+            "email": "diiimonn@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "diiimonn\\LaravelAuthService\\": "src"
+        }
+    }
+}
