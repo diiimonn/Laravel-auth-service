@@ -1,12 +1,12 @@
 <?php
 
-namespace diiimonn\LaravelAuthService;
+namespace diiimonn\laravel\AuthService;
 
 use Illuminate\Support\ServiceProvider;
 
 /**
  * Class AuthServiceProvider
- * @package diiimonn\LaravelAuthService
+ * @package diiimonn\laravel\AuthService
  */
 class AuthServiceProvider extends ServiceProvider
 {
@@ -18,7 +18,7 @@ class AuthServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/config/ds-auth.php' => config_path('ds-auth.php'),
+            __DIR__ . '/../config/ds-auth.php' => config_path('ds-auth.php'),
         ]);
 
         $this->loadRoutesFrom(__DIR__ . '/routes.php');
@@ -32,7 +32,7 @@ class AuthServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            __DIR__ . '/config/ds-auth.php', 'ds-auth'
+            __DIR__ . '/../config/ds-auth.php', 'ds-auth'
         );
     }
 }

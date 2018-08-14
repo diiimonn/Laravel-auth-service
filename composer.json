@@ -1,6 +1,6 @@
 {
-    "name": "diiimonn/Laravel-auth-service",
-    "description": "Microservice for auth user",
+    "name": "diiimonn/laravel-auth-service",
+    "description": "Microservice for auth user with passport",
     "type": "laravel-extension",
     "license": "MIT",
     "authors": [
@@ -9,10 +9,16 @@
             "email": "diiimonn@gmail.com"
         }
     ],
+    "require": {
+        "laravel/passport": "^6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "diiimonn\\LaravelAuthService\\": "src"
+            "diiimonn\\laravel\\AuthService\\": "src"
         }
     }
 }

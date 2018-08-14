@@ -1,5 +1,5 @@
 <?php
-namespace diiimonn\LaravelVerificationService\Http\Controllers;
+namespace diiimonn\laravel\AuthService\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -9,7 +9,7 @@ use Validator;
 
 /**
  * Class UserController
- * @package diiimonn\LaravelVerificationService\Http\Controllers
+ * @package diiimonn\laravel\AuthService\Http\Controllers
  */
 class UserController extends Controller
 {
@@ -20,7 +20,8 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function login(){
+    public function login()
+    {
         if (!Auth::attempt(['email' => request('email'), 'password' => request('password')])) {
             return response()->json(['error' => 'Unauthorised'], 401);
         }
